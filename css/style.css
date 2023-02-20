@@ -1,0 +1,465 @@
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136.363636%;
+    /* 30/22 */
+}
+
+.container {
+    max-width: 942px;
+    margin: 0px auto;
+}
+
+.block-text__title {
+    font-family: 'Spectral';
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.block-text__text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.menu__link.menu__link_active {
+    font-weight: bold;
+    position: relative;
+}
+.menu__link_decor::after {
+    content: "";
+    background-color:#303030;
+    transform: rotate(90deg);
+    position: absolute;
+    height: 7px;
+    width: 2px;
+    top: 20px;
+    right: 30px;
+}
+
+/* header start */
+.header {
+    background-color: #FFFFFF;
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.menu__item:not(:last-child) {
+    padding-right: 40px;
+}
+
+.menu__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135.714286%;
+    /* 19/14 */
+    letter-spacing: 1px;
+    color: #303030;
+}
+
+/* header end */
+
+/* section-trip start */
+.trip {
+    background: url('../img/trip-back.png');
+    height: 740px;
+}
+
+.trip__inner {
+    background: rgba(52, 198, 189, 0.8);
+    height: 220px;
+    margin: 315px 0;
+}
+
+.trip__block-text {
+    text-align: center;
+    color: #FEFEFE;
+    text-align: center;
+}
+
+.trip__title {
+    padding: 44px 0 20px 0;
+    line-height: 87.5%;
+    /* 42/48 */
+}
+
+.trip__text {
+    line-height: 136.363636%;
+    /* 30/22 */
+}
+
+/* section trip end */
+
+/* section resort start */
+.resort {
+    background: url(../img/resort-back.png);
+
+}
+
+
+.resort__inner {
+    padding: 140px 0 170px 0;
+}
+
+.resort__content {
+    position: relative;
+}
+
+.resort__title {
+    line-height: 152.083333%;
+    /* 73/48 */
+    color: #312C3A;
+    padding-bottom: 27px;
+}
+
+
+
+.resort__text {
+    line-height: 135.714286%;
+    /* 19/14 */
+    text-align: justify;
+    color: #896F50;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 26px 34px 18px 30px;
+    position: absolute;
+    left: 330px;
+    top: 120px;
+}
+
+
+
+.resort__decor-image {
+    position: absolute;
+    bottom: 16px;
+    left: 390px;
+}
+
+.button {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135.714286%;
+    /* 19/14 */
+    color: #1A1424;
+    border: 1px solid #1A1424;
+    border-radius: 20px;
+    padding: 10px 47px 10px 21px;
+    background-color: #fff;
+}
+
+.button span {
+    position: absolute;
+    right: 16px;
+    top: 13px;
+}
+
+.resort__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.decor {
+    position: absolute;
+    width: 269px;
+    height: 2px;
+    bottom: -171px;
+    left: 345px;
+
+    background-color: #B58C5D;
+}
+
+/* section resort end */
+
+/* section rooms start */
+.rooms {
+    background-color: #FCFCFC;
+    position: relative;
+}
+
+
+.rooms__title {
+    padding: 43px 0 50px 0;
+    text-align: center;
+
+}
+
+.rooms__button {
+    position: absolute;
+    top: 43px;
+    right: 44px;
+}
+
+
+
+.rooms__content {
+    flex: 0 1 33.333%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.rooms-card:not(:last-child) {
+    margin-right: 45px;
+}
+
+.rooms-card {
+    position: relative;
+    width: 257px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+}
+
+
+
+.rooms-card__image {
+    height: 158px;
+    background: url(../img/room-card.png) 0 0/100% 100% no-repeat;
+}
+
+.rooms-card__image_1 {
+    height: 261px;
+
+}
+
+.rooms-card__room {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 135%;
+    /* 27/20 */
+    color: rgba(26, 20, 36, 0.9);
+    padding: 10px 0 6px 0;
+    margin-left: 28px;
+}
+
+.rooms-card__price {
+    font-size: 18px;
+    line-height: 138.888889%;
+    /* 25/18 */
+    color: rgba(26, 20, 36, 0.9);
+    margin-left: 28px;
+}
+
+.rooms-card__descr {
+    padding: 29px 0 18px 0;
+    font-size: 13px;
+    line-height: 138.461538%;
+    /* 18/13 */
+    color: #6C656F;
+    background: url(../img/rooms-icon.png)0 34px no-repeat;
+    margin-left: 28px;
+}
+
+.rooms-card__descr span {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.rooms-card__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135.714286%;
+    /* 19/14 */
+    color: #4EA842;
+    text-align: center;
+    margin: 0 0 0 88px;
+
+
+}
+
+.rooms-card__button {
+    padding: 13px 44px;
+    background-color: #FFFFFF;
+    border: 1px solid #4EA842;
+    border-radius: 22.5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135.714286%;
+    text-align: center;
+    margin: 58px 0 28px 28px;
+    color: #4EA842;
+}
+
+.rooms-card__button_hover {
+    background-color: #4EA842;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
+.rooms-card__decor {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+/* rooms end */
+
+/* reviews start */
+.reviews {
+    background: url(../img/reviews-back.png);
+}
+
+.reviews__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reviews__title {
+    font-size: 36px;
+    line-height: 152.777778%;
+    /* 55/36 */
+    text-align: center;
+    color: #FFFFFF;
+    padding: 43px 0 35px 0;
+}
+
+.reviews__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 137.5%;
+    /* 22/16 */
+
+    color: #FFFFFF;
+}
+
+.reviews__subtitle span {
+    display: block;
+    height: 1px;
+    width: 102px;
+    background-color: #FFFFFF;
+    margin: 19px 0 22px 0;
+}
+
+.reviews__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    max-width: 380px;
+}
+
+.reviews__score {
+    padding-top: 22px;
+}
+
+/* slick */
+
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+.reviews-slider {
+    position: relative;
+    padding: 0 60px;
+}
+
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: 0;
+    background: url(../img/arrow-left.svg) 0 0 /100% no-repeat;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    right: 0;
+    background: url(../img/arrow-right.svg) 0 0 /100% no-repeat;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 37px;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* активный элемент точки */
+.slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+/* slick end */
+/* reviews end */
+/* footer start */
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer__inner {
+    display: flex;
+
+    align-items: flex-start;
+    padding: 66px 0 88px 0;
+}
+
+.footer-menu {
+    display: flex;
+    padding-right: 139px;
+}
+
+.footer__logo {
+    padding-right: 188px;
+}
+
+.footer-menu__list:first-child {
+    padding-right: 30px;
+}
+
+.footer-number__item {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 138.095238%;
+    /* 29/21 */
+    color: #312C3A;
+
+}
